@@ -1,3 +1,4 @@
+
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:flutter/material.dart';
 
@@ -105,214 +106,115 @@ class _MainPageState extends State<MainPage> {
 
       body: Container(
         height: double.infinity,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(
-              width: double.infinity,
-              height: 300,
-              decoration: BoxDecoration(color: Colors.amberAccent),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text('이번주 당첨 번호',style: TextStyle(fontSize: 20),),
-            //     1번부터 10번까지는 노란색입니다.
-            // 11번 부터 20번까지는 파란색입니다.
-            // 21번부터 30번까지는 빨간색입니다.
-            // 31번부터 40번까지는 검은색입니다.
-            // 41번부터 45번까지는 초록색입니다.
-                  Column(
-                    children: [
-                      Text('오늘 날짜'),
-                      Row(
-                        children: [
-                          ClipOval(
-                            child: Container(
-                              width: 50.0, // 원의 지름을 결정하는 너비 설정
-                              height: 50.0, // 원의 지름을 결정하는 높이 설정
-                              color: Colors.blue, // 배경색 설정
-                              child: Center(
-                                child: Text(
-                                 '1', // 숫자를 표시
-                                  style: TextStyle(
-                                    color: Colors.white, // 텍스트 색상 설정
-                                    fontSize: 24.0, // 텍스트 크기 설정
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          ClipOval(
-                            child: Container(
-                              width: 50.0, // 원의 지름을 결정하는 너비 설정
-                              height: 50.0, // 원의 지름을 결정하는 높이 설정
-                              color: Colors.blue, // 배경색 설정
-                              child: Center(
-                                child: Text(
-                                  '1', // 숫자를 표시
-                                  style: TextStyle(
-                                    color: Colors.white, // 텍스트 색상 설정
-                                    fontSize: 24.0, // 텍스트 크기 설정
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          ClipOval(
-                            child: Container(
-                              width: 50.0, // 원의 지름을 결정하는 너비 설정
-                              height: 50.0, // 원의 지름을 결정하는 높이 설정
-                              color: Colors.blue, // 배경색 설정
-                              child: Center(
-                                child: Text(
-                                  '1', // 숫자를 표시
-                                  style: TextStyle(
-                                    color: Colors.white, // 텍스트 색상 설정
-                                    fontSize: 24.0, // 텍스트 크기 설정
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          ClipOval(
-                            child: Container(
-                              width: 50.0, // 원의 지름을 결정하는 너비 설정
-                              height: 50.0, // 원의 지름을 결정하는 높이 설정
-                              color: Colors.blue, // 배경색 설정
-                              child: Center(
-                                child: Text(
-                                  '1', // 숫자를 표시
-                                  style: TextStyle(
-                                    color: Colors.white, // 텍스트 색상 설정
-                                    fontSize: 24.0, // 텍스트 크기 설정
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          ClipOval(
-                            child: Container(
-                              width: 50.0, // 원의 지름을 결정하는 너비 설정
-                              height: 50.0, // 원의 지름을 결정하는 높이 설정
-                              color: Colors.blue, // 배경색 설정
-                              child: Center(
-                                child: Text(
-                                  '1', // 숫자를 표시
-                                  style: TextStyle(
-                                    color: Colors.white, // 텍스트 색상 설정
-                                    fontSize: 24.0, // 텍스트 크기 설정
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          ClipOval(
-                            child: Container(
-                              width: 50.0, // 원의 지름을 결정하는 너비 설정
-                              height: 50.0, // 원의 지름을 결정하는 높이 설정
-                              color: Colors.blue, // 배경색 설정
-                              child: Center(
-                                child: Text(
-                                  '1', // 숫자를 표시
-                                  style: TextStyle(
-                                    color: Colors.white, // 텍스트 색상 설정
-                                    fontSize: 24.0, // 텍스트 크기 설정
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          ClipOval(
-                            child: Container(
-                              width: 50.0, // 원의 지름을 결정하는 너비 설정
-                              height: 50.0, // 원의 지름을 결정하는 높이 설정
-                              color: Colors.blue, // 배경색 설정
-                              child: Center(
-                                child: Text(
-                                  '+', // 숫자를 표시
-                                  style: TextStyle(
-                                    color: Colors.white, // 텍스트 색상 설정
-                                    fontSize: 24.0, // 텍스트 크기 설정
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          ClipOval(
-                            child: Container(
-                              width: 50.0, // 원의 지름을 결정하는 너비 설정
-                              height: 50.0, // 원의 지름을 결정하는 높이 설정
-                              color: Colors.blue, // 배경색 설정
-                              child: Center(
-                                child: Text(
-                                  '1', // 숫자를 표시
-                                  style: TextStyle(
-                                    color: Colors.white, // 텍스트 색상 설정
-                                    fontSize: 24.0, // 텍스트 크기 설정
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                height: 300,
+                decoration: BoxDecoration(color: Colors.amberAccent),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text('이번주 당첨 번호',style: TextStyle(fontSize: 20),),
+              //     1번부터 10번까지는 노란색입니다.
+              // 11번 부터 20번까지는 파란색입니다.
+              // 21번부터 30번까지는 빨간색입니다.
+              // 31번부터 40번까지는 검은색입니다.
+              // 41번부터 45번까지는 초록색입니다.
+                    Column(
+                      children: [
+                        Text('오늘 날짜'),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,                          mainAxisSize: MainAxisSize.min, // 최소한의 크기로 유지
+                         children: [
+                           ClipOval(
+                           child: Container(
+                             color: Colors.blue,
+                             width: 100, // Adjust the width and height as needed
+                             height: 100,
+                             child: Center(
+                               child: Text('1'),
+                             ),
+                           ),
+                         ),
 
-                    //
-                  ],),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ElevatedButton(onPressed: (){},
-                          child: Row(
-                            children: [
-                              Icon(Icons.sd_storage_outlined),
-                              Text('번호 직접 입력')
-                            ],
-                          )),
-                      ElevatedButton(onPressed: (){},
-                          child: Row(
-                            children: [
-                              Icon(Icons.camera_alt_outlined),
-                              Text('QR코드 스캔')
-                            ],
-                          ))
-                    ],
-                  )
+                         ],
+                        ),
 
-                ],
+                      //
+                    ],),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        ElevatedButton(onPressed: (){},
+                            child: Row(
+                              children: [
+                                Icon(Icons.sd_storage_outlined),
+                                Text('번호 직접 입력')
+                              ],
+                            )),
+                        ElevatedButton(onPressed: (){},
+                            child: Row(
+                              children: [
+                                Icon(Icons.camera_alt_outlined),
+                                Text('QR코드 스캔')
+                              ],
+                            ))
+                      ],
+                    )
+
+                  ],
+                ),
+              ) ,
+              //  Container(
+              //   width: 300,
+              //   height: 200,
+              //   decoration: BoxDecoration(color:Colors.blue,borderRadius: BorderRadius.circular(20)),
+              //   child: Column(
+              //     children: [Text('')],
+              //   ),
+              // ),
+              SizedBox(
+                width: 200,
+                height: 50,
               ),
-            ) ,
-            //  Container(
-            //   width: 300,
-            //   height: 200,
-            //   decoration: BoxDecoration(color:Colors.blue,borderRadius: BorderRadius.circular(20)),
-            //   child: Column(
-            //     children: [Text('')],
-            //   ),
-            // ),
-            SizedBox(
-              width: 200,
-              height: 50,
-            ),
-            // MBTI , 직접보기
+              // MBTI , 직접보기
+              //
 
-            Container(
-            width: double.infinity,
-            height: 100,
-            color: Colors.black12,
-              child: ListView.builder(
-                  itemBuilder: (BuildContext context, int index){
-              return Text('data');
-            },
-            ),
-            )
-          ],
+              Column(
+                children: [
+                  Text('번호추천'),
+                  GridView.builder(
+                    physics: NeverScrollableScrollPhysics(), // to disable GridView's scrolling
+                    shrinkWrap: true, // You won't see infinite size error
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                      itemBuilder: (BuildContext context, int idex){
+                    return myMenu();
+                      },
+                  itemCount: 6,),
+                ],
+              )
+
+
+            ],
+          ),
         ),
       ),
       // bottomNavigationBar: BottomNavigationBar(items: [
       //
       // ],) ,
+    );
+  }
+
+  Widget myMenu() {
+    return Container(
+      // width: 100.0, // 네모박스의 가로 크기
+      // height: 100.0, // 네모박스의 세로 크기
+      color: Colors.blue, // 배경색
+      margin: EdgeInsets.all(8.0), // 네모박스 간의 간격 설정
     );
   }
 }
